@@ -1,0 +1,94 @@
+ :root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+    --font_size: 14px;
+ }
+
+ html{
+    font-size: var(--font_size);
+ }
+
+ body{
+    background-color: var(--grey900);
+    padding: 16px;
+    font-family: "Inter";
+    color: var(--white);
+ }
+
+
+ /* Contenedor principal */
+ .profile-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
+
+
+ /* Tarjeta Perfil*/
+ .profile-card{
+    background-color: var(--grey800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+
+    @media (max-width: 400px){
+      padding: 20px;
+    }
+ }
+
+
+
+
+
+ /* Tarjeta Perfil Autor*/
+
+ .profile-card__author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+ }
+
+ /* Elementos de la tarjeta perfil autor*/
+
+ .profile-card_image{
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+ }
+
+ .profile-card__author-city{
+   color: var(--green);
+ }
+
+
+/* Tarjeta Perfil Social*/
+ .profile-card__social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+ /* Elementos de la tarjeta Perfil social*/
+
+ .profile-card_button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 80px;
+    background-color: var(--grey700);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+ }
